@@ -56,7 +56,7 @@ html {
 }
 
 .model-content {
-    background-color: blanchedalmond;
+    background-color: rgb(223, 192, 146);
     margin: 5% auto;
     padding: 1rem;
     width: 600px;
@@ -123,6 +123,57 @@ html {
     letter-spacing: 0.1rem;
 }
 
+.movie-info-overview {
+    margin: 2rem auto;
+}
+
+.karusell {
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.karusell img {
+    width: 100%;
+}
+
+.karusell .karusell__item,
+.karusell .karusell__item--hidden {
+   display: none; 
+}
+
+.karusell .karusell__item--visible {
+    display: block;
+    animation: fadeIn 0.6s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.karusell .karusell__actions {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.karusell .karusell__actions button {
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    height: 50px;
+    width: 50px;
+    border: 0;
+    background-color: #302d2d34;
+    font-size: 2rem;
+    color: #fff;
+    margin: 0,5rem;
+}
+
 .movie-info-actions {
     font-size:1.1rem;
 }
@@ -154,7 +205,7 @@ html {
 }
 
 footer {
-    margin-top: 2rem;
+    margin-top: 22rem;
     text-align: center;
     color: #777;
 }
