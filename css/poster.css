@@ -43,6 +43,47 @@ html {
     100% {opacity: 1;}
 }
 
+.model {
+    display: none;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(87, 80, 80, 0.411);
+    z-index: 2;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+.model-content {
+    background-color: blanchedalmond;
+    margin: 5% auto;
+    padding: 1rem;
+    width: 600px;
+    height: 600px;
+    animation: zoom-in 1s;
+}
+
+@keyframes zoom-in {
+    0% {transform: scale(0);}
+    100% {transform: scale(1);}
+}
+
+.closeBtn {
+    float: right;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.movie-poster-model {
+    width: 320px;
+}
+
+.movie-poster {
+    width: 320px;
+    cursor: pointer;
+}
+
 .movie-rating {
     display: inline-block;
     border: 1px solid #151515;
