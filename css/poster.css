@@ -34,7 +34,7 @@ html {
     height: 500px;
     border-radius: 20px;
     animation: image;
-    animation-duration: 5s;
+    animation-duration: 4.9s;
     animation-fill-mode: forwards;
 }
 
